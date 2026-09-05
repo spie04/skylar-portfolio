@@ -1,1 +1,44 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Nova Case Study — Skylar Pietraszewski</title><link rel="stylesheet" href="styles.css"><style>.story{max-width:850px;padding:80px 0}.story h1{font:clamp(3rem,7vw,6rem)/.95 Georgia,serif;letter-spacing:-.05em}.story h2{font-size:2.2rem;margin-top:2.5rem}.story p,.story li{font-size:1.08rem}.callout{border-left:5px solid var(--lime);padding:10px 24px;background:#e8eadc}</style></head><body><header class="nav"><a class="mark" href="index.html">SP</a><nav><a href="index.html">Portfolio</a><a href="resume.html">Résumé</a></nav></header><main class="story"><p class="eyebrow">Nova case study</p><h1>A research system that can say “I don't know.”</h1><p class="callout">Nova is an independent, substantially AI-assisted quantitative research and paper-execution project. No real capital was deployed and no trading edge has been demonstrated.</p><h2>The problem</h2><p>Producing a signal was easier than proving the system had earned the right to believe it. Nova was organized around a strict constraint: missing information must not become zero, partial success must not become complete success, and research must not become authorized action without validation.</p><h2>A governed truth funnel</h2><p><code>ingest_raw → clean_raw → enrich → features → regime → story → cards</code></p><p>Provenance and degradation information travel with the data. Risk gates fail closed, execution requires human approval with a matching payload hash, and observability failure becomes unknown rather than silently healthy.</p><h2>What the audit uncovered</h2><ul><li>Historical bars fetched for calculations but never persisted.</li><li>Swallowed exceptions recorded as real zero values.</li><li>UTC/Eastern mismatches selecting plausible but invalid bars.</li><li>Configuration that did not reach every runtime path.</li><li>Duplicate classifiers producing incompatible labels.</li><li>A post-fill error that still appeared successful.</li></ul><h2>End-to-end evidence</h2><p>One genuine market observation was traced through 14 unbroken links using real Interactive Brokers market data and paper execution—from ingestion and persistence through risk qualification, operator approval, outcome, learning signal, and evidence consumed by a later decision.</p><h2>Scope and outcome</h2><p>At audit time, Nova included approximately 29,000–35,000 lines of Python across approximately 200 modules, approximately 2,900 passing tests, 25 database tables, and 156 REST routes. All 240 recorded orders were paper venue. The strongest demonstrated result is not a profitable strategy; it is a system that preserves negative and insufficient findings without manufacturing confidence.</p><h2>AI-assisted engineering</h2><p>AI contributed substantially to implementation. My ownership included problem definition, architecture, requirements, decomposition, invariants, acceptance criteria, implementation review, integration decisions, debugging, testing, and evidence-based capability audits. I do not claim every line was manually written without assistance.</p></main></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Nova Case Study — Skylar Pietraszewski</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .story{max-width:850px;padding:80px 0}
+    .story h1{font:clamp(3rem,7vw,6rem)/.95 Georgia,serif;letter-spacing:-.05em}
+    .story h2{font-size:2.2rem;margin-top:2.5rem}
+    .story p,.story li{font-size:1.08rem}
+    .callout{border-left:5px solid var(--lime);padding:10px 24px;background:#e8eadc}
+  </style>
+</head>
+<body>
+  <header class="nav"><a class="mark" href="index.html">SP</a><nav><a href="index.html">Portfolio</a><a href="resume.html">Résumé</a></nav></header>
+  <main class="story">
+    <p class="eyebrow">Nova case study</p>
+    <h1>A research system that can say “I don't know.”</h1>
+    <p class="callout">Nova is an independent quantitative research and paper-execution project. No real capital was deployed and no trading edge has been demonstrated.</p>
+    <h2>The problem</h2>
+    <p>Producing a signal was easier than proving the system had earned the right to believe it. Nova was organized around a strict constraint: missing information must not become zero, partial success must not become complete success, and research must not become authorized action without validation.</p>
+    <h2>A governed truth funnel</h2>
+    <p><code>ingest_raw → clean_raw → enrich → features → regime → story → cards</code></p>
+    <p>Provenance and degradation information travel with the data. Risk gates fail closed, execution requires human approval with a matching payload hash, and observability failure becomes unknown rather than silently healthy.</p>
+    <h2>What the audit uncovered</h2>
+    <ul>
+      <li>Historical bars fetched for calculations but never persisted.</li>
+      <li>Swallowed exceptions recorded as real zero values.</li>
+      <li>UTC/Eastern mismatches selecting plausible but invalid bars.</li>
+      <li>Configuration that did not reach every runtime path.</li>
+      <li>Duplicate classifiers producing incompatible labels.</li>
+      <li>A post-fill error that still appeared successful.</li>
+    </ul>
+    <h2>End-to-end evidence</h2>
+    <p>One genuine market observation was traced through 14 unbroken links using real Interactive Brokers market data and paper execution—from ingestion and persistence through risk qualification, operator approval, outcome, learning signal, and evidence consumed by a later decision.</p>
+    <h2>Scope and outcome</h2>
+    <p>At audit time, Nova included approximately 29,000–35,000 lines of Python across approximately 200 modules, approximately 2,900 passing tests, 25 database tables, and 156 REST routes. All 240 recorded orders were paper venue. The strongest demonstrated result is not a profitable strategy; it is a system that preserves negative and insufficient findings without manufacturing confidence.</p>
+    <h2>Development disclosure</h2>
+    <p>Implementation used substantial AI assistance. My responsibility included problem definition, architecture, requirements, decomposition, invariants, acceptance criteria, implementation review, integration decisions, debugging, testing, and evidence-based capability audits. I do not claim every line was manually written without assistance.</p>
+  </main>
+</body>
+</html>
